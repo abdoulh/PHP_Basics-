@@ -215,12 +215,33 @@ echo '<p>You rolled a ' . $english . ' and a '
 $birthdays['Stephanie'] = '1980-05-16';
 $birthdays['David'] = '1983-09-09';
 
-$birthdays = [
-  'Kevin' => '1978-04-12',
-  'Stephanie' => '1980-05-16',
-  'David' => '1983-09-09'
- ];
- echo 'Kevin\'s birthday is: ' . $birthdays['Kevin'];
+//$birthdays = [
+  //'Kevin' => '1978-04-12',
+  //'Stephanie' => '1980-05-16',
+  //'David' => '1983-09-09'
+ //];
+ //echo 'Kevin\'s birthday is: ' . $birthdays['Kevin'];
+
+
+ 
+ $name = $_GET['name'];
+ echo 'Welcome to our website, ' . $name . '!';
+ 
+ 
+ 
+ $name = $_GET['name'];
+echo 'Welcome to our website, ' .
+ htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '!';
+ 
+ htmlspecialchars($name, ENT_QUOTES, 'UTF-8')
+
+
+ 
+
+
+ 
+
+ 
 
  
 
