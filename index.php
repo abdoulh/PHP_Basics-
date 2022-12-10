@@ -224,16 +224,23 @@ $birthdays['David'] = '1983-09-09';
 
 
  
- $name = $_GET['name'];
- echo 'Welcome to our website, ' . $name . '!';
+ //$name = $_GET['name'];
+ //echo 'Welcome to our website, ' . $name . '!';
  
  
  
- $name = $_GET['name'];
+ //$name = $_GET['name'];
+//echo 'Welcome to our website, ' .
+ //htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '!';
+ 
+ //htmlspecialchars($name, ENT_QUOTES, 'UTF-8')
+
+ $firstName = $_GET['firstname'];
+$lastName = $_GET['lastname'];
 echo 'Welcome to our website, ' .
- htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '!';
- 
- htmlspecialchars($name, ENT_QUOTES, 'UTF-8')
+ htmlspecialchars($firstName, ENT_QUOTES, 'UTF-8') . ' ' .
+ htmlspecialchars($lastName, ENT_QUOTES, 'UTF-8') . '!';
+?>
 
 
  
