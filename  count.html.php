@@ -5,6 +5,8 @@
  <title>Counting to Ten</title>
  </head>
  <body>
+ 
+ 
  <p>
  <?php echo $output;
  ?>
